@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ReactJs-Single-Web-page/static/css/main.0a70b68c.css",
+    "main.js": "/ReactJs-Single-Web-page/static/js/main.95cd9800.js",
+    "static/media/subscribe-bg.png": "/ReactJs-Single-Web-page/static/media/subscribe-bg.66bb18fcec635d82553c.png",
+    "static/media/phone-header-bg.png": "/ReactJs-Single-Web-page/static/media/phone-header-bg.c0ca1798311c080127c0.png",
+    "static/media/phone-features.png": "/ReactJs-Single-Web-page/static/media/phone-features.fdadf84ec3bc2a0d3094.png",
+    "index.html": "/ReactJs-Single-Web-page/index.html",
+    "main.0a70b68c.css.map": "/ReactJs-Single-Web-page/static/css/main.0a70b68c.css.map",
+    "main.95cd9800.js.map": "/ReactJs-Single-Web-page/static/js/main.95cd9800.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a70b68c.css",
+    "static/js/main.95cd9800.js"
+  ]
+}

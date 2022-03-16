@@ -1,0 +1,29 @@
+
+ a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #fff;
+    margin-right: 1rem;
+    transition: .30s ease;
+}
+ a:hover{
+    color: orangered;
+  
+}
+a.btn{
+
+    border-radius: 5px;
+    /* margin-left: 1rem; */
+    font-weight: 500;
+    padding: 5px 8px;
+}
+a.btn-dark{
+    border: 2px solid white;
+    background-color: transparent;
+}
+a.btn-orange{
+    border: 2px solid transparent;
+    background-color: orangered;
+    color: #fff;
+}

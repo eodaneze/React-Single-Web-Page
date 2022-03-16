@@ -1,0 +1,39 @@
+
+/* text styles */
+/* ultility-classes */
+.u-text-small{
+    font-size: 1.3rem;
+    line-height: 1.4;
+    font-weight: 300;
+  }
+  .u-texr-light{
+    color: #fff;
+  }
+  .u-texr-light{
+    color: #000;
+  }
+  
+  
+  /* title */
+  .u-title{
+    text-align: center;
+    margin-bottom: 4rem;
+    padding-top: 5%;
+  }
+  .u-title h2{
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: #000;
+    margin: 1.5rem 0;
+  }
+  .u-title p{
+    width: 50%;
+    min-width: 40rem;
+    margin: 0 auto;
+  }
+  #features{
+    background-color: #fff;
+    height: 120vh;
+  }

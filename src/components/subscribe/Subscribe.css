@@ -1,0 +1,86 @@
+section#subscribe{
+    background: url("../../assets/subscribe-bg.png");
+    height: 60vh;
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.subscribe{
+    padding-top: 5%;
+    color: #fff;
+}
+.subscribe h2{
+    font-size: 3rem;
+    font-weight: 200;
+    line-height: 1.4;
+    text-transform: uppercase;
+    margin: 0 1.5rem;
+    padding-bottom: 1rem;
+}
+/* form > * {
+    width: 100%;
+     max-width: 50rem;
+} */
+
+form{
+    margin: 3rem auto;
+}
+form input{
+    width: 400px;
+    border: none;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 8px;
+    outline: none;
+    color: #fff;
+    border-radius: 5px 0 0 5px;
+
+}
+form input::placeholder{
+    color: #fff;
+}
+form button{
+    padding: 9px 8px;
+    border: none;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+    font-weight: 500;
+
+    background-color: rgb(131, 225, 238);
+    color: #fff;
+}
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.social-icon{
+   margin: 2rem;
+   padding: 1rem;
+   height: 4rem;
+   width: 4rem;
+   border: 1px solid #fff;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   transition: .30s ease;
+
+}
+.social-icon:hover{
+    background-color:  rgb(131, 225, 238);
+}
+
+
+@media (max-width: 600px){
+    form input{
+        width: 100%;
+    
+    
+    }
+    .form-control{
+        display: flex;
+    } 
+}

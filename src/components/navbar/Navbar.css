@@ -1,0 +1,144 @@
+.all-nav{
+    background-color: var(--dark-blue);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    margin-bottom: 80px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+}
+/* .all-nav{
+    height: 100vh;
+} */
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-text{
+    font-size: 4rem;
+    font-weight: 300;
+    color: #fff;
+}
+.logo-text span{
+    font-weight: 600;
+    color: orangered;
+}
+.nav-links{
+    display: flex;
+  
+}
+.nav-links li{
+    list-style: none;
+    margin-left: 1rem;
+}
+.nav-links a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #fff;
+    margin-right: 1rem;
+    transition: .30s ease;
+}
+.nav-links a:hover{
+    color: orangered;
+  
+}
+a.btn{
+
+    border-radius: 5px;
+    /* margin-left: 1rem; */
+    font-weight: 500;
+    padding: 5px 8px;
+}
+a.btn-dark{
+    border: 2px solid white;
+    background-color: transparent;
+}
+a.btn-orange{
+    border: 2px solid transparent;
+    background-color: orangered;
+    color: #fff;
+}
+.fa-bars{
+    color: #fff;
+    font-size: 20px;
+}
+
+.menu-icons{
+    display: none;
+}
+
+@media screen and (max-width: 821px){
+    .nav-btn{
+        display: none;
+    }
+}
+
+
+@media  screen and (max-width:600px){
+    .nav-links{
+        display: none;
+        border: 2px solid #fff;
+        /* z-index: 111; */
+    }
+    .menu-icons{
+        display: block;
+    }
+    #nav-links-mobile,#nav-links-mobile-hide{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 8rem;
+        width: 100%;
+        background-color: var(--dark-blue);
+        border-top: 1px solid #fff;
+        padding-bottom: 5px;
+        transition: all .3s;
+        z-index: 10;
+      
+    }
+    #nav-links-mobile{
+        animation: slide-in 0.5s ease-in-out;
+    }
+    @keyframes slide-in {
+        0%{
+            transform: translateX(-100%);
+        } 
+        0%{
+            transform: translateX(0);
+        } 
+    }
+    #nav-links-mobile-hide{
+        left: -100%;
+        /* this will hide the menu bar 100% to the left */
+        animation: slide-out 0.5s ease-in-out;
+    }
+    @keyframes slide-in {
+        0%{
+            transform: translateX(0);
+        } 
+        0%{
+            transform: translateX(-100%);
+        } 
+    }
+#nav-links-mobile li,#nav-links-mobile-hide li{
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #fff;
+    margin: 0 3rem;
+}
+#nav-links-mobile li:last-child,#nav-links-mobile-hide li:last-child{
+    border-bottom: none;
+}
+.nav-btn{
+    display: block;
+}
+
+
+}

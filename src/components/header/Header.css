@@ -1,0 +1,124 @@
+#header{
+    position: relative;
+    padding-bottom: 8%;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 9%;
+ 
+}
+.header-left h1{
+    color: #fff;
+    font-size: 4rem;
+    line-height: 1.4;
+    position: relative;
+    padding-bottom: 2rem;
+    font-weight: 800;
+  
+}
+.header-left h1 span{
+    display: block;
+}
+.header-left h1 span:nth-child(2),.header-left h1 span:nth-child(3){
+    font-weight: 100;
+}
+.header-left h1::after{
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 65%;
+   height: 2px;
+   background-color: #fff;
+}
+.header-left p{
+    color: #fff;
+    font-size: 1.5rem;
+    width: 70%;
+    margin: 3rem 0;
+}
+.header-right img{
+    width: 100%;
+    margin-bottom: 7rem;
+}
+.float-icon{
+    width: 5rem;
+    height: 5rem;
+    background-color: #00c4c4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    cursor: pointer;
+     margin-bottom: 5rem;
+ 
+}
+.float-icon a{
+    border: 1px solid #fff;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mouse{
+    transform: translateY(-25%);
+    animation: bounce .8s ease infinite alternate;
+}
+
+@keyframes bounce{
+    0%{
+        transform: translateY(-25%);
+    }
+    100%{
+        transform: translateY(25%);
+    }
+}
+
+
+
+
+@media(max-width: 769px){
+    .header{
+        flex-direction: row;
+    }
+    .header-left h1{
+        font-size: 3rem;
+        
+    }
+}
+
+
+@media(max-width: 600px){
+    .header{
+        flex-direction: column;
+    }
+    .header-left,.header-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .header-left{
+        margin-bottom: 4rem;
+    }
+    .header-left h1::after{
+       left: 50%;
+       transform: translate(-50%);
+     }
+     .header-right img{
+         width: 80%;
+     }
+}
